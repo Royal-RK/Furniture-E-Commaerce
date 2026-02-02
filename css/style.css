@@ -425,7 +425,7 @@ header {
 
 /*=========================== Value =====================*/
 .value-sec {
-  margin: 150px 0;
+  padding: 150px 0;
 }
 .value-sec > .value-signature {
   width: 228px;
@@ -526,7 +526,7 @@ header {
   padding: 0 calc(87.67px / 4);
 }
 .fst-col > .foot-logo {
-  max-width: 134px;
+  width: 134px !important;
   height: 46px;
   margin-bottom: 24px;
 }
@@ -628,6 +628,12 @@ header {
 
 /*=========== Media =============*/
 @media (max-width: 576px) {
+  .bnr-cnt .title-1 {
+    font-size: 40px;
+  }
+  .title-2 {
+    font-size: 28px;
+  }
   .sale-sec {
     background-image: url("../assets/sale-img-2.png");
     background-size: cover;
