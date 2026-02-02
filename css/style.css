@@ -98,7 +98,6 @@ header {
   background-color: var(--primary-color) !important;
 }
 
-
 /*====================== Banner ================*/
 .bnr-sec {
   /* padding: 150px 0 !important; */
@@ -200,7 +199,7 @@ header {
   /* min-height: 60vh; */
   background:
     url("../assets/sale-img-1.png") no-repeat left/50% 100%,
-    url("../assets/sale-img-2.png") no-repeat right/50% 100%;
+    url("../assets/sale-img-2.png") no-repeat right/50% 100% !important;
 }
 .sale-cnt {
   display: flex;
@@ -593,7 +592,7 @@ header {
   position: relative;
 }
 .fourth-col-sub-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -628,7 +627,7 @@ header {
 }
 
 /*=========== Media =============*/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .sale-sec {
     background-image: url("../assets/sale-img-2.png");
     background-size: cover;
