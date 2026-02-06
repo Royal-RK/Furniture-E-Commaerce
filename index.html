@@ -22,11 +22,16 @@
             <img src="./assets/nav-logo.png" alt="" />
           </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+          <div class="offcanvas-header">
+            <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+              <span></span>
+            </button>
+          </div>
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -79,11 +84,11 @@
     <div class="container">
       <div class="row shades-row">
         <div class="col-12 col-md-12 col-lg-6">
-          <div class="shades-cnt mx-md-auto">
+          <div class="shades-cnt">
             <div class="sinature">
               <img src="./assets/shades-signature-img.png" alt="" />
             </div>
-            <h2 class="title-2">shades of elegance</h2>
+            <h2 class="title-2 mx-auto">shades of elegance</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur ad is cing elit, semdo
               eiusmod tempor est.
@@ -108,7 +113,28 @@
   </section>
   <!-- Sale section -->
   <section class="sale-sec">
-    <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="sale">
+          <div class="sale-left-img">
+            <img src="./assets/sale-signature-1.png" alt="" />
+          </div>
+          <div class="sale-btn">
+            <a href="" class="sale-common-btn btn">shop now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="discover">
+          <div class="sale-right-img">
+            <img src="./assets/sale-signature-2.png" alt="" />
+          </div>
+          <div class="sale-btn">
+            <a href="" class="sale-common-btn btn">discover</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container">
       <div class="sale-cnt">
         <div class="left-sale-cnt">
           <div class="sale-left-img">
@@ -127,7 +153,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <!-- Thinking Section -->
   <section class="think-sec">
@@ -249,10 +275,10 @@
     <div class="container">
       <div class="made-cnt">
         <div class="made-signature">
-          <img src="./assets/think-&-product-signature.png" alt="">
+          <img src="./assets/think-&-product-signature.png" alt="" />
         </div>
         <h2 class="title-2">made with loveand dedication</h2>
-        <div class="made-btn d-flex justify-content-end">
+        <div class="made-btn btn">
           <a href="" class="discvr-btn btn">discover</a>
         </div>
       </div>
@@ -262,10 +288,9 @@
   <section class="value-sec">
     <div class="container">
       <div class="value-signature">
-        <img src="./assets/value-signature.png" alt="">
+        <img src="./assets/value-signature.png" alt="" />
       </div>
-      <h2 class="title-2">DRIVEN BY OUR OWN ORIGINAL
-        SET OF VALUES</h2>
+      <h2 class="title-2">DRIVEN BY OUR OWN ORIGINAL SET OF VALUES</h2>
       <div class="row value-row">
         <div class="col-12 col-lg-6">
           <div class="value-left-form">
@@ -274,21 +299,21 @@
               <div class="brand-value">78%</div>
             </div>
             <div class="brand-under-line">
-              <img src="./assets/value-underline.png" alt="">
+              <img src="./assets/value-underline.png" alt="" />
             </div>
             <div class="original">
               <div class="original-title">original</div>
               <div class="original-vale">90%</div>
             </div>
             <div class="original-under-line">
-              <img src="./assets/value-underline.png" alt="">
+              <img src="./assets/value-underline.png" alt="" />
             </div>
             <div class="exp">
               <div class="exp-title">EXPERIENCE</div>
               <div class="exp-value">90%</div>
             </div>
             <div class="exp-under-line">
-              <img src="./assets/value-underline.png" alt="">
+              <img src="./assets/value-underline.png" alt="" />
             </div>
           </div>
         </div>
@@ -299,21 +324,21 @@
               <div class="brand-value">78%</div>
             </div>
             <div class="brand-under-line">
-              <img src="./assets/value-underline.png" alt="">
+              <img src="./assets/value-underline.png" alt="" />
             </div>
             <div class="original">
               <div class="original-title">original</div>
               <div class="original-vale">90%</div>
             </div>
             <div class="original-under-line">
-              <img src="./assets/value-underline.png" alt="">
+              <img src="./assets/value-underline.png" alt="" />
             </div>
             <div class="exp">
               <div class="exp-title">EXPERIENCE</div>
               <div class="exp-value">90%</div>
             </div>
             <div class="exp-under-line">
-              <img src="./assets/value-underline.png" alt="">
+              <img src="./assets/value-underline.png" alt="" />
             </div>
           </div>
         </div>
@@ -323,14 +348,18 @@
   <!-- footer section -->
   <section class="foot-sec">
     <div class="container">
-      <div class="row foor-row">
-        <div class=" col-12 col-md-6 col-lg-4">
+      <div class="row foot-row">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="fst-col mx-auto mb-4">
             <div class="foot-logo">
-              <img src="./assets/nav-logo.png" alt="">
+              <a class="foot-brand d-inline-block" href="index.html">
+                <img src="./assets/nav-logo.png" alt="" />
+              </a>
             </div>
-            <p>We make interiors infused with the spirit of <br>
-              contemporary design and minimalist philosophies.</p>
+            <p>
+              We make interiors infused with the spirit of <br />
+              contemporary design and minimalist philosophies.
+            </p>
             <div class="social">
               <p>instagram</p>
               <p>facebook</p>
@@ -338,26 +367,26 @@
             </div>
           </div>
         </div>
-        <div class=" col-12 col-md-6 col-lg-2">
+        <div class="col-12 col-md-6 col-lg-2">
           <div class="scnd-col mx-auto mb-4">
-            <div class="scnd-col-title">
-              Designers
-            </div>
-            <p>Ivana Kostadinova <br>
-              Italymobile <br>
-              Sweden Int <br>
-              Arch. France</p>
+            <div class="scnd-col-title">Designers</div>
+            <p>
+              Ivana Kostadinova <br />
+              Italymobile <br />
+              Sweden Int <br />
+              Arch. France
+            </p>
           </div>
         </div>
-        <div class=" col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="third-col mx-auto mb-4">
-            <div class="third-col-title">
-              faq
-            </div>
-            <p>Where can I find your catalog? <br>
-              Can I make online purchases? <br>
-              When can I visit your studio? <br>
-              How long does shipping take?</p>
+            <div class="third-col-title">faq</div>
+            <p>
+              Where can I find your catalog? <br />
+              Can I make online purchases? <br />
+              When can I visit your studio? <br />
+              How long does shipping take?
+            </p>
             <p></p>
             <p></p>
           </div>

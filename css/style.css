@@ -38,6 +38,11 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+nav {
+  padding: 0 !important;
 }
 .nav-container {
   max-width: 1844px !important;
@@ -94,9 +99,12 @@ header {
 .nav-link.active:hover {
   color: var(--primary-color) !important;
 }
-.navbar-toggler-icon {
-  background-color: var(--primary-color) !important;
+.offcanvas {
+  flex-direction: row !important;
 }
+/* .navbar-toggler-icon {
+  color: var(--primary-color) !important;
+} */
 
 /*====================== Banner ================*/
 .bnr-sec {
@@ -126,6 +134,7 @@ header {
   border-radius: 0 !important;
   transition: 0.5s linear !important;
   overflow: hidden;
+  margin: 0 auto !important;
 }
 .discvr-btn svg {
   margin-left: 10px !important;
@@ -194,19 +203,19 @@ header {
 }
 
 /*========================== Sale ===================*/
-.sale-sec {
-  padding: 200px 0 !important;
-  /* min-height: 60vh; */
+/* .sale-sec {
+  padding: 150px 0 !important;
+  min-height: 60vh;
   background:
     url("../assets/sale-img-1.png") no-repeat left/50% 100%,
     url("../assets/sale-img-2.png") no-repeat right/50% 100% !important;
-}
-.sale-cnt {
+} */
+/* .sale-cnt {
   display: flex;
   min-height: 40vh;
 }
 
-.left-sale-cnt,
+/* .left-sale-cnt,
 .right-sale-cnt {
   width: 50%;
   position: relative;
@@ -215,22 +224,41 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 .sale-left-img {
   width: 192px;
   height: 88px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 .sale-right-img {
   width: 172px;
   height: 88px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 .sale-left-img > img,
 .sale-right-img > img {
   object-fit: contain;
   width: 100%;
   height: 1005;
+}
+.sale-sec .row {
+  margin: 0 !important;
+}
+.sale-sec .row > * {
+  padding: 0 !important;
+}
+/* .sale ,.discover {
+  min-height: 554px;
+ } */
+.sale {
+  padding: 150px 0;
+  text-align: center !important;
+  background: url("../assets/sale-img-1.png") no-repeat center/cover;
+}
+.discover {
+  padding: 150px 0;
+  text-align: center !important;
+  background: url("../assets/sale-img-2.png") no-repeat center/cover;
 }
 .sale-btn > .sale-common-btn {
   padding: 18px 67.23px 18px 57px;
@@ -390,7 +418,7 @@ header {
 .made-cnt {
   max-width: 760px;
   margin-left: auto;
-  /* text-align: right; */
+  text-align: right;
 }
 .made-cnt > .made-signature {
   width: 116px;
@@ -525,12 +553,14 @@ header {
 .foot-row .col-lg-3 {
   padding: 0 calc(87.67px / 4);
 }
-.fst-col > .foot-logo {
-  width: 134px !important;
-  height: 46px;
-  margin-bottom: 24px;
+.fst-col .foot-logo {
+  margin-bottom: 24px !important;
 }
-.foot-logo > img {
+.fst-col .foot-brand {
+  width: 134px !important;
+  height: 46px !important;
+}
+.foot-brand > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -627,14 +657,21 @@ header {
 }
 
 /*=========== Media =============*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  /* banner cnt start */
   .bnr-cnt .title-1 {
-    font-size: 40px;
+    font-size: 36px !important;
   }
+  /* Banner cnt end */
+
+  /* font size  start*/
   .title-2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
-  .sale-sec {
+  /* font-size end */
+
+  /* sale sec start */
+  /* .sale-sec {
     background-image: url("../assets/sale-img-2.png");
     background-size: cover;
     background-position: center;
@@ -643,18 +680,142 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-  }
+  } */
+  /* sale sec end */
 }
-@media (min-width: 768px) {
-  .sale-sec {
+@media screen and (max-width: 768px) {
+  /* sale sec start */
+  /* .sale-sec {
     background-image: url("../assets/sale-img-1.png");
     background-size: cover;
     background-position: center;
   }
   .sale-cnt {
     flex-direction: row;
+  } */
+  /* sale sec end */
+
+  /* font size start */
+  .title-1 {
+    font-size: 54px !important;
   }
+  .title-2 {
+    font-size: 40px !important;
+  }
+  /* font size end */
 }
+@media screen and (max-width: 992px) {
+  /* ṇavbar header start */
+  .offcanvas {
+    flex-direction: column !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(20px);
+    padding-top: 69.78px;
+  }
+  .nav-item {
+    margin: 0 0 20px 0 !important;
+    text-align: center;
+  }
+  .nav-btn {
+    margin: 0 auto !important ;
+    text-align: center !important;
+  }
+  .close-btn {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    /* height: 20px; */
+    /* width: 20px; */
+    /* background: var(--primary-color); */
+    /* display: flex; */
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0 20px;
+  }
+  .close-btn > span {
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    /* width: 30px; */
+    background: var(--primary-color);
+    top: -4px;
+    left: 0;
+    right: 0;
+    transform: rotate(45deg) translate(5px);
+  }
+  .close-btn::after {
+    content: "";
+    height: 2px;
+    /* width: 30px; */
+    background: var(--primary-color);
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    transform: rotate(-45deg) translate(6px);
+  }
+  /* navbar header end */
+
+  /* shades sontent start */
+  .shades-cnt {
+    text-align: center !important;
+  }
+  .shades-cnt .title-2,
+  .shades-cnt p {
+    margin: 0 auto !important;
+  }
+  /* shade content end */
+
+  /* Thinking cnt start */
+  .think-left-cnt {
+    text-align: center !important;
+  }
+  .think-left-cnt .think-signature,
+  .think-left-cnt p,
+  .think-left-cnt .title-2 {
+    margin: 0 auto;
+  }
+  .think-right-cnt {
+    margin: 0 auto;
+  }
+  /* Thinking cnt end */
+
+  /* product content start */
+  .product-signature,
+  .title-2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* product content end */
+
+  /* Made cnt start */
+  .made-cnt,
+  .made-cnt .title-2 {
+    text-align: center;
+  }
+  .made-cnt .made-signature,
+  .made-cnt .title-2 {
+    margin: 0 auto;
+  }
+  /* Made cnt end */
+
+  /* value signature start */
+  .value-signature {
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+  /* value signature end */
+}
+/* .sale-sec {
+    background-image: url("../assets/sale-img-1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .sale-cnt {
+    flex-direction: row;
+  } */
+/* } */
 /* @media (min-width: 1200px) { 
   .fst-col .social {
     gap: 5px;

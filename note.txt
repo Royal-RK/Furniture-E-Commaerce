@@ -1,0 +1,36 @@
+nav btn to offcanvas btn {
+    1. data-bs-toggle="collapse" to data-bs-toggle="offcanvas"
+    2. button > data-bs-target="#navbarSupportedContent" and navbar-collapse >
+    id="navbarSupportedContent same hte hbe
+    3. collapse navbar-collapse class name change to offcanvas offcanvas-start
+    4. jdi ami left side a open korte chai then offcanvas-start & right side open
+    offcanvas-end
+    5. in navbar css .offcanvas {
+        flex-direction: row;
+    }
+    and
+    .@media screen (jei screen a menu btn show hbe) {
+        .offcanvas {
+            flex-direction: column;
+            background: rgba(255,255,255,0.5)
+            backdrop-filter: blur(10px)
+        }
+    }
+    5. nav {
+        padding: 0;
+    }
+    6. .@media screen (jei screen a menu btn show hbe) {
+        .offcanvas {
+            flex-direction: column;
+            background: rgba(255,255,255,0.5)
+            backdrop-filter: blur(10px)
+            padding-top: (header-height);
+        }
+        .nav-item {
+            margin: 0 0 20px 0
+        }
+    }
+    .7 offcanvas header moddhe ja close btn ta a6a ota k navbar a set korte hbe
+    copy kore navbar ul r age offcanvas-header akta div bniye or moddhe paste korte hbe
+    8. button ta nijer mto bnate hbe button r moddhe span niye cross btn bnate hbe
+}
