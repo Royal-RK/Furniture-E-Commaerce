@@ -511,10 +511,12 @@ nav {
 .exp-under-line {
   margin-bottom: 47px;
 }
-.value-left-form .brand-under-line {
+.value-left-form .brand-under-line,
+.value-right-form .brand-under-line {
   max-width: 505px;
 }
-.value-left-form .brand-under-line > img {
+.value-left-form .brand-under-line > img,
+.value-right-form .brand-under-line > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -528,12 +530,10 @@ nav {
   object-fit: contain;
 }
 .exp-under-line,
-.value-right-form .brand-under-line,
 .value-right-form .original-under-line {
   max-width: 647px;
 }
 .exp-under-line > img,
-.value-right-form .brand-under-line > img,
 .value-right-form .original-under-line > img {
   width: 100%;
   height: 100%;
